@@ -166,3 +166,14 @@ Please cite Satyapanich, Ferraro and Finin,
 AAAI 2020. Dataset articles, annotations, pretrained models and checkpoints
 retain their upstream terms; this repository does not grant additional rights
 to those materials.
+
+## License
+
+Original project code and documentation are available under the
+[MIT License](LICENSE), copyright 2026 Team Ultron contributors.
+
+This license does not relicense the CASIE corpus, source articles, supplied
+prediction artifacts, third-party code or dependencies, pretrained models,
+or separately obtained checkpoint weights. Third-party content embedded in
+notebooks or reports retains its own terms. See
+[Third-party notices and license scope](THIRD_PARTY_NOTICES.md) for details.
