@@ -55,3 +55,9 @@ Appendix A of the notebook retains the raw preprocessing source for context;
 that appendix was not rerun end to end during the additional training session.
 For the exact file inventory, hashes, and alignment caveats, inspect
 `CASIE_README.md` and `CASIE_dataset_metadata.json` inside the input bundle.
+
+The original [preprocessing PDF](reports/CASIE_Dataset_Preprocessing_Validation.pdf)
+describes an earlier annotation-aware token-splitting step. It is retained as
+historical provenance and does not describe the final corrected text-only
+tokenization used by the submitted bundle. Use the bundle's metadata, current
+notebook checks and the text-only procedure above for the final representation.

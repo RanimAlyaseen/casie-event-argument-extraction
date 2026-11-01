@@ -107,13 +107,30 @@ def main():
     spec.loader.exec_module(module)
     module.validate_statistical_code()
     checkpoint = json.loads((ROOT / "results/verification/checkpoint_cpu_verification.json").read_text())
-    assert checkpoint["models"]["deberta_v3_base"]["gpu_verification_status"] == "pending"
+    assert checkpoint["models"]["deberta_v3_base"]["gpu_verification_status"] == "complete_historical_f1_reproduced"
+    gpu_report = json.loads((ROOT / "results/verification/deberta_gpu_verification.json").read_text())
+    gpu_differences = json.loads((ROOT / gpu_report["public_differences"]).read_text())
+    assert gpu_report["status"] == manifest["subsequent_verification"]["deberta_gpu"]["status"]
+    assert gpu_report["sample"] == {"events": 736, "documents": 100, "gold_arguments": 2109}
+    assert len(gpu_differences) == gpu_report["changed_events"] == 5
+    assert gpu_report["identical_events"] + len(gpu_differences) == 736
+    assert sum(d["net_correct_difference"] for d in gpu_differences) == gpu_report["net_correct_difference"] == 1
+    assert gpu_report["returned_cpu_semantically_matches_original"]
+    assert gpu_report["runtime_reported_by_colab"]["test_sha256"] == checkpoint["test_sha256"]
+    assert gpu_report["independent_rescoring"]["cpu"] == checkpoint["models"]["deberta_v3_base"]["cpu_overall"]
+    assert not gpu_report["independent_rescoring"]["gpu_scorer_warnings"]
+    gpu = gpu_report["independent_rescoring"]["gpu"]
+    assert abs(2 * gpu["correct"] / (gpu["predicted_arguments"] + gpu["gold_arguments"]) - gpu["arg_c_f1"]) < 1e-15
+    assert gpu["arg_c_f1"] == gpu_report["historical_notebook_f1"] == manifest["subsequent_verification"]["deberta_gpu"]["gpu_arg_c_f1"]
+    assert (gpu["correct"], gpu["predicted_arguments"], gpu["gold_arguments"]) == (1266, 2159, 2109)
+    for relative in gpu_differences:
+        assert all("text" not in span for key in ("cpu_only", "gpu_only") for span in relative[key])
     for model in checkpoint["models"].values():
         assert model["cpu_overall"]["events"] == 736
         assert not model["scorer_warnings"]
         o = model["cpu_overall"]
         assert abs(2 * o["correct"] / (o["predicted_arguments"] + o["gold_arguments"]) - o["arg_c_f1"]) < 1e-15
-    print("PASS: audit provenance, pooled counts, statistical code checks and CPU report consistency")
+    print("PASS: audit provenance, statistical checks, CPU report consistency and completed GPU verification")
 
     candidates = subprocess.check_output(["git", "-C", str(ROOT), "ls-files", "--cached", "--others", "--exclude-standard"], text=True).splitlines()
     secret = re.compile(r"(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{30,}|hf_[A-Za-z0-9]{25,}|sk-(?:proj-)?[A-Za-z0-9_-]{30,})")

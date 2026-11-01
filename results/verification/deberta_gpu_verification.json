@@ -1,0 +1,98 @@
+{
+  "verification_date": "2026-11-01",
+  "status": "complete_historical_f1_reproduced",
+  "scope": "Independent CPU rescoring of returned saved predictions; no new inference or training",
+  "sample": {
+    "events": 736,
+    "documents": 100,
+    "gold_arguments": 2109
+  },
+  "source_archive": {
+    "filename": "results_20261101T140646Z_CASIE_verification.zip",
+    "bytes": 36174,
+    "sha256": "3f3c0bad943213accbeeb1c5bb881427784e367d99bab13ff76b0691800cd8d7",
+    "member_sha256": {
+      "comparison_report.json": "b6b09706f9be726deebd6cf9f70ca95364d6a8b8bb20d50c0864ffcdcfadad1e",
+      "cpu_test_predictions.jsonl": "f10ff8daa05340223d955b790028ee3686249728542fac18c41fd5714830cb82",
+      "event_differences.csv": "4d2d937884da9d121101ebaf6969da36e652f5f2d7203fed602a24cf60a6f6b3",
+      "event_differences.json": "f396111cb4af39c9adcaf6afcbb87416d4d6cc86c17c0fa856dbe9944e2f5aa6",
+      "gpu_test_predictions.jsonl": "76248e772ab2421ae84b7cabd42976672dd77cbbfc50bbaa6dc2f6f0a4a038fe"
+    },
+    "contains_weights_or_dataset": false
+  },
+  "runtime_reported_by_colab": {
+    "python": "3.13.16",
+    "packages": {
+      "torch": "2.11.0+cu130",
+      "transformers": "5.21.0",
+      "tokenizers": "0.23.3",
+      "sentencepiece": "0.2.2"
+    },
+    "gpu": "Tesla T4",
+    "cuda": "13.0",
+    "batch_size": 32,
+    "autocast": "CUDA float16 (repository predict implementation)",
+    "float32_matmul_precision": "highest",
+    "repository_commit": "e563f31d273e7f03c6b566d211c6f67d340f095e",
+    "weights_sha256": "ace9511fa25e3056e2044ff5839f53aa4441e0bc9a47ae220f290a5fef9058fe",
+    "test_sha256": "ed9c585a54660d14decdd49efd25dfb33e07c44f150614fb136c2cbfbdbc1c50",
+    "source_sha256": {
+      "casie_transformer.py": "6a6016764dc3b3bbec717c7ad5a9ca9eb2cf6947f3ecca7b41973ba2f7984759",
+      "casie_eval.py": "9bf9e79ca3fee0e48373c4ad1844dacd09ad37755942bd66d33de286a870961f"
+    },
+    "cpu_predictions_sha256": "1d170c66909d1704fc0e8a3eca500beaebbcd4160bb6b24f578aca3b18fca3db",
+    "inference_seconds": 14.996227474999614
+  },
+  "independent_rescoring": {
+    "cpu": {
+      "arg_c_precision": 0.5859194071329319,
+      "arg_c_recall": 0.5998103366524419,
+      "arg_c_f1": 0.5927835051546392,
+      "arg_i_precision": 0.6123205187586845,
+      "arg_i_recall": 0.626837363679469,
+      "arg_i_f1": 0.619493908153702,
+      "macro_f1": 0.503043225541576,
+      "gold_arguments": 2109,
+      "predicted_arguments": 2159,
+      "correct": 1265,
+      "events": 736
+    },
+    "gpu": {
+      "arg_c_precision": 0.5863825845298749,
+      "arg_c_recall": 0.6002844950213371,
+      "arg_c_f1": 0.5932521087160262,
+      "arg_i_precision": 0.6123205187586845,
+      "arg_i_recall": 0.626837363679469,
+      "arg_i_f1": 0.619493908153702,
+      "macro_f1": 0.5039757635951905,
+      "gold_arguments": 2109,
+      "predicted_arguments": 2159,
+      "correct": 1266,
+      "events": 736
+    },
+    "cpu_scorer_warnings": [],
+    "gpu_scorer_warnings": []
+  },
+  "historical_notebook_f1": 0.5932521087160262,
+  "gpu_matches_historical_f1": true,
+  "gpu_minus_cpu_f1": 0.0004686035613870043,
+  "gpu_minus_historical_f1": 0.0,
+  "changed_events": 5,
+  "identical_events": 731,
+  "net_correct_difference": 1,
+  "returned_cpu_semantically_matches_original": true,
+  "cpu_byte_hash_note": "The returned CPU file was reserialized by casie_eval.save_predictions. Its byte hash differs from the original upload, while all event-specific span-and-role sets are identical.",
+  "checks": {
+    "zip_crc_and_exact_member_inventory": true,
+    "prediction_uid_populations": true,
+    "test_and_source_hashes": true,
+    "weights_hash_matches_local_checkpoint": true,
+    "all_returned_metrics_match_rescoring": true,
+    "json_and_csv_differences_match_independent_comparison": true
+  },
+  "public_differences": "results/verification/deberta_cpu_gpu_event_differences.json",
+  "local_raw_artifacts": "runs/deberta_gpu_verification_20261101T140646Z",
+  "raw_predictions_in_git": false,
+  "original_historical_gpu_prediction_file_available": false,
+  "interpretation": "The recorded T4/float16/batch-32 configuration reproduces the historical aggregate F1. Five event prediction sets change relative to CPU and yield one net additional correct argument. Backend, precision and batching differ together, so their separate causal effects are not isolated. Matching F1 does not prove identity with the missing original historical predictions."
+}

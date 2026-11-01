@@ -112,9 +112,10 @@
       },
       "weights_sha256": "ace9511fa25e3056e2044ff5839f53aa4441e0bc9a47ae220f290a5fef9058fe",
       "model_loading_and_demo_callback_succeeded": true,
-      "gpu_verification_status": "pending",
+      "gpu_verification_status": "complete_historical_f1_reproduced",
+      "gpu_verification_result": "results/verification/deberta_gpu_verification.json",
       "gpu_verification_notebook": "notebooks/CASIE_Colab_DeBERTa_Verification.ipynb"
     }
   },
-  "interpretation": "Close CPU reproduction, not exact historical reproduction. Backend, precision and batching are plausible causes but have not been isolated. Historical benchmark scores are preserved."
+  "interpretation": "Close CPU reproduction, not exact historical reproduction. A subsequently returned T4 DeBERTa run reproduces historical aggregate F1 and differs from CPU on five events. The separate effects of backend, precision and batching are not isolated. Historical benchmark scores are preserved."
 }

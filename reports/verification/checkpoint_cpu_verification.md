@@ -54,9 +54,11 @@ and checkpoint weights remain in ignored `runs/`; they are not distributed
 in this repository.
 
 The [DeBERTa Colab notebook](../../notebooks/CASIE_Colab_DeBERTa_Verification.ipynb)
-is prepared but GPU execution is pending. Follow its
-[instructions](colab_deberta_verification.md) and retain all scores and event
-differences, including a GPU result that still differs from the notebook.
+has now produced a returned T4 result. Independent rescoring reproduces
+historical F1 **0.5932521087**; five event prediction sets differ from CPU,
+giving one additional correct argument overall. See the
+[GPU verification report](deberta_gpu_verification.md). The notebook and
+[instructions](colab_deberta_verification.md) remain available for repetition.
 It is DeBERTa-specific and must not be used unchanged for RoBERTa.
 
 The original tracked demo lexicon has 2,061 phrases. A separately received

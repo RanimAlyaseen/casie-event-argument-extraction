@@ -50,4 +50,7 @@ CPU F1 is **0.5927835051546392**; historical F1 is **0.5932521087160262**.
 Report whatever the GPU produces. Backend, precision and batch size change
 together, so this comparison cannot isolate their individual causal effects.
 A score match also cannot prove equality to the original missing GPU artifact.
-Until returned artifacts have been reviewed, GPU verification remains pending.
+The first returned T4 result has now been independently checked and reproduces
+the historical F1. See the [completed verification](deberta_gpu_verification.md)
+for counts, event differences and provenance. These instructions remain the
+procedure for any subsequent repeat run.

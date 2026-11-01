@@ -18,10 +18,11 @@ benchmark comparison is available in the notebook and results tables.
   — includes the recorded training and evaluation outputs.
 - [Benchmark and limitations](BENCHMARK.md) — scoring, selection rule and provenance.
 - [Dataset preparation](DATASET_PREPARATION.md) — split, alignment and checksums.
+- [Prediction format](docs/PREDICTION_FORMAT.md) — event IDs, token spans and BIO files.
 - [Demo instructions](demo/README.md) — checkpoint requirements and launch commands.
 - [Reports](reports/README.md) — original reports and subsequent verification.
 - [Project status](docs/PROJECT_STATUS.md) — completed checks and remaining work.
-- [Contributions](contributions/CONTRIBUTIONS.md) — workstreams and artifact provenance.
+- [Contributions](CONTRIBUTIONS.md) — named responsibilities and artifact provenance.
 
 ## Results
 
@@ -68,15 +69,23 @@ values remain unchanged by the later verification runs.
   DeBERTa; these closely reproduce, but do not exactly match, the historical
   **0.619557** and **0.593252**. See the
   [checkpoint verification](reports/verification/checkpoint_cpu_verification.md).
-- **DeBERTa GPU verification remains pending.** The
-  [Colab verification notebook](notebooks/CASIE_Colab_DeBERTa_Verification.ipynb)
-  compares new GPU predictions with the recorded CPU file, without training.
-  [Step-by-step instructions](reports/verification/colab_deberta_verification.md)
-  describe the required private inputs and downloadable result archive.
+- **DeBERTa GPU score reproduced.** The returned T4 run achieves
+  **0.5932521087 F1**, matching the historical score. Independent rescoring
+  confirms 1,266 correct / 2,159 predicted / 2,109 gold arguments, no scorer
+  warnings, and five changed events versus CPU (one net additional correct
+  argument). See the [GPU verification report](reports/verification/deberta_gpu_verification.md).
+  The [Colab notebook](notebooks/CASIE_Colab_DeBERTa_Verification.ipynb) and
+  [instructions](reports/verification/colab_deberta_verification.md) remain
+  available to repeat the check. Backend, precision and batch size differ
+  together; their separate causal effects are not isolated.
 
 The BERT comparison concerns two fitted models with different pretrained
 weights and vocabularies; it does not isolate a causal effect of casing.
 Document-bootstrap intervals do not measure variation across training seeds.
+
+Recent repository updates are recorded in [CHANGELOG.md](CHANGELOG.md).
+The [source artifact inventory](reports/verification/source_artifact_inventory.md)
+explains which team archives match the submitted predictions.
 
 ## Run the demo
 
@@ -131,8 +140,7 @@ demo/            Portable launcher, documented usage and original trigger lexico
 results/         Historical tables/manifest, verification results and latency evidence
 figures/         Final figures exported from executed notebook outputs
 reports/         Original PDF reports and current verification notes
-presentation/    Existing presentation; professor-feedback revision still pending
-contributions/   Workstream provenance; personal attribution awaits team confirmation
+CONTRIBUTIONS.md Named team responsibilities and artifact provenance
 scripts/         BERT audit and repository validation commands
 tests/           Lightweight launcher regression checks
 runs/            Local checkpoints, predictions and caches (ignored; not distributed)
@@ -142,6 +150,11 @@ Keep `team_code/` at the repository root: the notebook and demo depend on it.
 The executed submission, input bundle, historical CSVs and final figures are
 preserved. Generated caches, local environments, checkpoint weights and
 temporary uploads are excluded from Git.
+
+The earlier presentation directory was removed in a subsequent repository
+update. A revised presentation has not been published here yet; see the
+[feedback checklist](reports/verification/presentation_feedback_checklist.md)
+and [project status](docs/PROJECT_STATUS.md) for the remaining slide work.
 
 ## Interpretation and references
 

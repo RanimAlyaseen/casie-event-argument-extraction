@@ -35,7 +35,13 @@
     "deberta_gpu": {
       "notebook": "notebooks/CASIE_Colab_DeBERTa_Verification.ipynb",
       "instructions": "reports/verification/colab_deberta_verification.md",
-      "status": "pending"
+      "report": "reports/verification/deberta_gpu_verification.md",
+      "result": "results/verification/deberta_gpu_verification.json",
+      "event_differences": "results/verification/deberta_cpu_gpu_event_differences.json",
+      "status": "complete_historical_f1_reproduced",
+      "gpu_arg_c_f1": 0.5932521087160262,
+      "changed_events_vs_cpu": 5,
+      "net_correct_difference_vs_cpu": 1
     },
     "latency_provenance": "results/latency/provenance.json"
   },
@@ -54,7 +60,7 @@
     "The original runtime reset before the optional additional-run per-event predictions ZIP was exported. New CPU predictions remain local under runs/; original additional DeBERTa GPU predictions are unavailable.",
     "Historical team test results were visible before the additional experiments.",
     "The raw preprocessing appendix was not independently rerun end to end in this session.",
-    "CPU results do not exactly match historical metrics. Numerical causes are unconfirmed; DeBERTa GPU comparison remains pending.",
+    "CPU results do not exactly match historical metrics. A returned DeBERTa T4 run reproduces historical aggregate F1 and differs from CPU on five events. Backend, precision and batching effects remain unisolated, and the original historical GPU per-event file is still unavailable.",
     "Statistical comparisons condition on fitted models and test documents, not training-seed variability."
   ]
 }

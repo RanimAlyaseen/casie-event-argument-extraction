@@ -77,11 +77,15 @@ on all 736 events gives F1 **0.6187871581** and **0.5927835052**, respectively,
 with no scorer warnings. RoBERTa differs from the supplied predictions on
 2 events (734 identical). The DeBERTa aggregate has one fewer correct argument
 than the historical metrics imply, with unchanged predicted/gold counts.
-The numerical cause has not been isolated. See the
-[CPU verification report](reports/verification/checkpoint_cpu_verification.md).
-The [DeBERTa Colab GPU comparison](notebooks/CASIE_Colab_DeBERTa_Verification.ipynb)
-is prepared but pending execution; do not replace historical results with
-these CPU verification values.
+The separate causal effects of hardware, precision and batching are not
+isolated. See the [CPU verification report](reports/verification/checkpoint_cpu_verification.md).
+The returned [DeBERTa GPU comparison](reports/verification/deberta_gpu_verification.md)
+has now been independently rescored: T4/float16/batch-32 predictions achieve
+**0.5932521087 F1**, exactly matching the historical aggregate F1. Five events
+differ from CPU, yielding one net additional correct argument. All 736 events
+are present and neither scorer run warns. This reproduces the score under
+the recorded GPU configuration; it does not prove identity to the unavailable
+original historical per-event predictions. Historical tables remain intact.
 
 **Latency evidence:** the original five-model archive includes measurements
 for the supplied CRF on CPU and four transformers on a reported T4 GPU.
