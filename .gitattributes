@@ -1,0 +1,6 @@
+*.ipynb text eol=lf
+*.py text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.zip binary
+*.png binary

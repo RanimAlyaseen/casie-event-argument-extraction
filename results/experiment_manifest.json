@@ -1,0 +1,16 @@
+{
+  "task": "CASIE event-conditioned argument role extraction",
+  "selection_metric": "exact argument span-and-role micro F1 (Arg-C)",
+  "selected_by_validation": "Supplied RoBERTa",
+  "notebook": "CASIE_Project2_Executed_Submission.ipynb",
+  "input_bundle": "data/TeamUltron_Project2_Inputs.zip",
+  "data_sha256": "733d35285fb640930da334baad7cd7a1c85ff7d166d47e41ae684498c8994daf",
+  "provenance": "CSV rows and PNG figures extracted from the executed notebook outputs",
+  "limitations": [
+    "Five supplied model weights are unavailable; their checked prediction files are in the input bundle.",
+    "The additional model checkpoints are stored separately and not in this repository tree.",
+    "The original runtime reset before the optional per-event predictions ZIP was exported.",
+    "Historical team test results were visible before the additional experiments.",
+    "The raw preprocessing appendix was not independently rerun end to end in this session."
+  ]
+}

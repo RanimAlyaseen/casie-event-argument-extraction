@@ -1,0 +1,12 @@
+# Colab and model outputs; separately saved checkpoints can be large.
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+outputs/
+checkpoints/
+*.safetensors
+*.pt
+*.joblib
+*.bin
+*.zip
+!data/TeamUltron_Project2_Inputs.zip
