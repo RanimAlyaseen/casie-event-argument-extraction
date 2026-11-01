@@ -1,0 +1,13 @@
+# Recorded Colab environment for the executed notebook (Python 3.13.16, Tesla T4).
+# The notebook installs the CRF packages itself. Colab supplies PyTorch/CUDA.
+torch>=2.11,<2.12
+transformers==5.21.0
+tokenizers==0.23.3
+sentencepiece==0.2.2
+scikit-learn==1.6.1
+sklearn-crfsuite==0.5.0
+python-crfsuite==0.9.12
+numpy
+pandas
+matplotlib
+joblib
