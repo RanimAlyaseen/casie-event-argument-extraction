@@ -1,0 +1,34 @@
+{
+  "bert-base-cased": {
+    "device": "cuda:0",
+    "params_millions": 107.8,
+    "single_event_ms_median": 20.6,
+    "single_event_ms_p90": 23.9,
+    "throughput_events_per_s": 143.6,
+    "events": 736
+  },
+  "bert-base-uncased": {
+    "device": "cuda:0",
+    "params_millions": 108.9,
+    "single_event_ms_median": 21.4,
+    "single_event_ms_p90": 25.1,
+    "throughput_events_per_s": 144.7,
+    "events": 736
+  },
+  "roberta-base": {
+    "device": "cuda:0",
+    "params_millions": 124.1,
+    "single_event_ms_median": 20.7,
+    "single_event_ms_p90": 25.2,
+    "throughput_events_per_s": 145.4,
+    "events": 736
+  },
+  "SecureBERT": {
+    "device": "cuda:0",
+    "params_millions": 124.1,
+    "single_event_ms_median": 19.6,
+    "single_event_ms_p90": 22.1,
+    "throughput_events_per_s": 146.7,
+    "events": 736
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "verification_date": "2026-11-01",
+  "code_reference_commit": "e563f31d273e7f03c6b566d211c6f67d340f095e",
+  "sample": {
+    "events": 736,
+    "documents": 100,
+    "gold_arguments": 2109
+  },
+  "scoring": "Exact event-specific inclusive token span and role; gold triggers and subtypes",
+  "test_sha256": "ed9c585a54660d14decdd49efd25dfb33e07c44f150614fb136c2cbfbdbc1c50",
+  "source_sha256": {
+    "casie_transformer.py": "6a6016764dc3b3bbec717c7ad5a9ca9eb2cf6947f3ecca7b41973ba2f7984759",
+    "casie_eval.py": "9bf9e79ca3fee0e48373c4ad1844dacd09ad37755942bd66d33de286a870961f"
+  },
+  "local_settings": {
+    "device": "cpu",
+    "dtype": "float32",
+    "batch_size": 1,
+    "cpu_threads": 2
+  },
+  "model_weights_in_git": false,
+  "models": {
+    "roberta": {
+      "checkpoint_relative_path": "runs/roberta_base_muhammet",
+      "local_predictions": "runs/roberta_verification_20261101T113732Z/restored_roberta_cpu_test_predictions.jsonl",
+      "cpu_overall": {
+        "arg_c_precision": 0.620706106870229,
+        "arg_c_recall": 0.6168800379326695,
+        "arg_c_f1": 0.6187871581450655,
+        "arg_i_precision": 0.6469465648854962,
+        "arg_i_recall": 0.6429587482219061,
+        "arg_i_f1": 0.6449464922711058,
+        "macro_f1": 0.5730950221715541,
+        "gold_arguments": 2109,
+        "predicted_arguments": 2096,
+        "correct": 1301,
+        "events": 736
+      },
+      "published_reference": {
+        "arg_c_precision": 0.6217765042979942,
+        "arg_c_recall": 0.6173541963015647,
+        "arg_c_f1": 0.6195574589578872,
+        "arg_i_precision": 0.6480420248328558,
+        "arg_i_recall": 0.6434329065908013,
+        "arg_i_f1": 0.6457292410183203,
+        "macro_f1": 0.5735540261096065,
+        "gold_arguments": 2109,
+        "predicted_arguments": 2094,
+        "correct": 1302,
+        "events": 736
+      },
+      "reference_count_provenance": "Scored directly from supplied prediction artifact in input bundle",
+      "scorer_warnings": [],
+      "reference_scorer_warnings": [],
+      "changed_events": 2,
+      "identical_events": 734,
+      "differences": "results/verification/roberta_cpu_prediction_differences.json",
+      "f1_difference_from_historical": -0.0007703008128217004,
+      "inference_seconds": 605.126242600054,
+      "versions": {
+        "torch": "2.11.0+cpu",
+        "transformers": "5.21.0",
+        "tokenizers": "0.23.3",
+        "gradio": "6.31.0"
+      },
+      "checkpoint_sha256": {
+        "config.json": "4ebf99c17d0f72d0751f48175f0bd19f3955221d22a2a7f96601b9cf340c3600",
+        "model.safetensors": "b5ddbd7626a66d7db0d385a20320798dc49e526811c59026076d62a9c741eb19",
+        "tokenizer.json": "53e1e1d0d83fd591a814fe7bd2a8e612772c4d0426d8eea4204f7e23eb84e89e",
+        "tokenizer_config.json": "15844dfa35633ec5f9e5cfb01632b3a39db121549e8f041892275206f108f885",
+        "training_config.json": "a0b45d6abc8cf62be188579b0a6d1e7f209e8031654cb4a0f3de21d3017e4eb2",
+        "trigger_lexicon.json": "2dd9b26d7cc2557bbf6c1945f2154f48da7eee44e48e05e61ec40e75d8516512"
+      },
+      "model_loading_and_demo_callback_succeeded": true,
+      "cpu_predictions_sha256": "a0984a71e8d1d7b8ecac69982d9e01affcd5e8cf363f2ee6c3565115dae589a0"
+    },
+    "deberta_v3_base": {
+      "checkpoint_relative_path": "runs/deberta_v3_base_run/outputs/deberta_v3_base",
+      "local_predictions": "runs/deberta_test_cpu_20261101T105313Z/test_predictions.jsonl",
+      "cpu_reference_upload_filename": "CASIE_CPU_test_predictions.jsonl",
+      "cpu_predictions_sha256": "1d170c66909d1704fc0e8a3eca500beaebbcd4160bb6b24f578aca3b18fca3db",
+      "cpu_overall": {
+        "arg_c_precision": 0.5859194071329319,
+        "arg_c_recall": 0.5998103366524419,
+        "arg_c_f1": 0.5927835051546392,
+        "arg_i_precision": 0.6123205187586845,
+        "arg_i_recall": 0.626837363679469,
+        "arg_i_f1": 0.619493908153702,
+        "macro_f1": 0.503043225541576,
+        "gold_arguments": 2109,
+        "predicted_arguments": 2159,
+        "correct": 1265,
+        "events": 736
+      },
+      "published_reference": {
+        "arg_c_precision": 0.5863825845298749,
+        "arg_c_recall": 0.6002844950213371,
+        "arg_c_f1": 0.5932521087160262,
+        "correct": 1266,
+        "predicted_arguments": 2159,
+        "gold_arguments": 2109
+      },
+      "reference_count_provenance": "Correct/predicted counts inferred from recorded historical P/R/F1; original GPU predictions unavailable",
+      "scorer_warnings": [],
+      "f1_difference_from_historical": -0.0004686035613870043,
+      "inference_seconds": 804.9056480000072,
+      "versions": {
+        "torch": "2.11.0+cpu",
+        "transformers": "5.21.0",
+        "tokenizers": "0.23.3",
+        "sentencepiece": "0.2.2"
+      },
+      "weights_sha256": "ace9511fa25e3056e2044ff5839f53aa4441e0bc9a47ae220f290a5fef9058fe",
+      "model_loading_and_demo_callback_succeeded": true,
+      "gpu_verification_status": "pending",
+      "gpu_verification_notebook": "notebooks/CASIE_Colab_DeBERTa_Verification.ipynb"
+    }
+  },
+  "interpretation": "Close CPU reproduction, not exact historical reproduction. Backend, precision and batching are plausible causes but have not been isolated. Historical benchmark scores are preserved."
+}

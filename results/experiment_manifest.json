@@ -2,15 +2,59 @@
   "task": "CASIE event-conditioned argument role extraction",
   "selection_metric": "exact argument span-and-role micro F1 (Arg-C)",
   "selected_by_validation": "Supplied RoBERTa",
-  "notebook": "CASIE_Project2_Executed_Submission.ipynb",
+  "notebook": "notebooks/CASIE_Project2_Executed_Submission.ipynb",
   "input_bundle": "data/TeamUltron_Project2_Inputs.zip",
   "data_sha256": "733d35285fb640930da334baad7cd7a1c85ff7d166d47e41ae684498c8994daf",
   "provenance": "CSV rows and PNG figures extracted from the executed notebook outputs",
+  "published_comparison": {
+    "validation_table": "results/validation_summary.csv",
+    "validation_rows": 8,
+    "test_table": "results/test_summary.csv",
+    "test_rows": 9,
+    "note": "Test includes supplied and additional CRF runs; these are not nine model families. Historical metrics are preserved."
+  },
+  "subsequent_verification": {
+    "date": "2026-11-01",
+    "source_reference_commit": "e563f31d273e7f03c6b566d211c6f67d340f095e",
+    "bert_significance": {
+      "report": "reports/verification/bert_significance.md",
+      "result": "results/verification/bert_significance.json",
+      "document_counts": "results/verification/bert_document_counts.json",
+      "script": "scripts/verify_bert_significance.py",
+      "difference_f1_points": 3.42742616343521,
+      "paired_document_bootstrap_samples": 100000,
+      "two_sided_document_randomizations": 100000,
+      "seed": 42,
+      "randomization_p": 0.0035999640003599965
+    },
+    "checkpoint_cpu": {
+      "report": "reports/verification/checkpoint_cpu_verification.md",
+      "result": "results/verification/checkpoint_cpu_verification.json",
+      "status": "RoBERTa and standard DeBERTa load and score all 736 events; close but not exact historical reproduction"
+    },
+    "deberta_gpu": {
+      "notebook": "notebooks/CASIE_Colab_DeBERTa_Verification.ipynb",
+      "instructions": "reports/verification/colab_deberta_verification.md",
+      "status": "pending"
+    },
+    "latency_provenance": "results/latency/provenance.json"
+  },
+  "demo": {
+    "launcher": "demo/launch.py",
+    "recommended_model": "RoBERTa, selected using validation F1",
+    "coverage": "One standard BIO transformer checkpoint per launch; event-type dropdown is not a model selector",
+    "weights_in_repository": false,
+    "historical_lexicon": "demo/trigger_lexicon.json",
+    "historical_lexicon_phrases": 2061,
+    "separate_local_lexicon_phrases": 2062
+  },
   "limitations": [
-    "Five supplied model weights are unavailable; their checked prediction files are in the input bundle.",
-    "The additional model checkpoints are stored separately and not in this repository tree.",
-    "The original runtime reset before the optional per-event predictions ZIP was exported.",
+    "Supplied model results are backed by checked prediction artifacts in the input bundle. RoBERTa weights were later obtained separately; the other four supplied checkpoints have not been restored here.",
+    "RoBERTa and additional standard DeBERTa checkpoints were restored locally under ignored runs/. No model weights are versioned or included in a fresh clone.",
+    "The original runtime reset before the optional additional-run per-event predictions ZIP was exported. New CPU predictions remain local under runs/; original additional DeBERTa GPU predictions are unavailable.",
     "Historical team test results were visible before the additional experiments.",
-    "The raw preprocessing appendix was not independently rerun end to end in this session."
+    "The raw preprocessing appendix was not independently rerun end to end in this session.",
+    "CPU results do not exactly match historical metrics. Numerical causes are unconfirmed; DeBERTa GPU comparison remains pending.",
+    "Statistical comparisons condition on fitted models and test documents, not training-seed variability."
   ]
 }

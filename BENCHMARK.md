@@ -53,25 +53,69 @@ does not establish a general encoder advantage. The role-conditioned
 adaptation increased validation recall over standard DeBERTa (0.722 versus
 0.631) while decreasing precision (0.490 versus 0.569).
 
+## Verification after the original evaluation
+
+The historical table above is preserved. Subsequent checks are recorded
+separately in [results/verification/](results/verification/) and the
+[verification reports](reports/README.md).
+
+**BERT uncased versus cased:** the supplied test artifacts reproduce F1
+0.5696372593 versus 0.5353629977, an improvement of **3.4274 F1 points**.
+A paired bootstrap over whole documents gives a 95% difference interval of
+**[+1.2494, +5.5628] points** (100,000 resamples, seed 42). A separate
+two-sided document randomization test gives **p = 0.003599964** (100,000
+randomizations, seed 42; unadjusted retrospective comparison). A 5,000-sample
+bootstrap sign-tail calculation reproduces the archived 0.002, but its
+original generating script was not identified. See the
+[complete audit](reports/verification/bert_significance.md) for both methods.
+These fitted models have different pretrained weights and vocabularies;
+this is not a causal intervention on casing alone or a multi-seed study.
+
+**Checkpoint restoration:** RoBERTa and standard DeBERTa have been restored
+locally and tested with the shared code. CPU float32, batch-size-1 inference
+on all 736 events gives F1 **0.6187871581** and **0.5927835052**, respectively,
+with no scorer warnings. RoBERTa differs from the supplied predictions on
+2 events (734 identical). The DeBERTa aggregate has one fewer correct argument
+than the historical metrics imply, with unchanged predicted/gold counts.
+The numerical cause has not been isolated. See the
+[CPU verification report](reports/verification/checkpoint_cpu_verification.md).
+The [DeBERTa Colab GPU comparison](notebooks/CASIE_Colab_DeBERTa_Verification.ipynb)
+is prepared but pending execution; do not replace historical results with
+these CPU verification values.
+
+**Latency evidence:** the original five-model archive includes measurements
+for the supplied CRF on CPU and four transformers on a reported T4 GPU.
+Single-event latency includes encoding; batched throughput uses a different
+timing boundary and batch size. These are not laptop timings or a controlled
+same-hardware comparison. See [latency notes](reports/verification/latency.md)
+and the preserved source JSON under [results/latency/](results/latency/).
+
 ## Interpretation and limits
 
 - The standard DeBERTa row is the **checkpoint-backed second run**. A separate
   earlier validation result of 0.6171 lost its checkpoint and has no test
   evaluation; it is excluded from the table.
-- Five initial model weight sets were not supplied. Their prediction files are
-  present, but this repository cannot restore those fitted models. Additional
-  checkpoint ZIPs were saved separately and are not committed here.
+- The supplied benchmark is backed by prediction artifacts. RoBERTa weights
+  were subsequently obtained separately and restored locally; the other four
+  supplied weight sets have not been restored here. Standard DeBERTa was also
+  restored from its separate additional-run archive. No checkpoint weights
+  are committed, and a fresh clone cannot load these fitted models without
+  separately obtaining their checkpoints.
 - The original team's test predictions were viewed before the extra runs.
   The final test set is therefore not a fully blind benchmark; additional
   models were selected using validation F1.
-- The notebook's optional per-event export did not survive the Colab reset.
-  Rebuilding it needs checkpoint restoration and inference.
+- The notebook's optional additional-run per-event export did not survive the
+  Colab reset. The supplied predictions remain in the input bundle; the new
+  CPU prediction files are retained locally under ignored `runs/`. The original
+  additional DeBERTa GPU test predictions remain unavailable.
 - The raw preprocessing appendix is retained for provenance but was not
   independently rerun end to end in the additional training session.
 
 For published context, [TextEE (Huang et al., 2024)](https://aclanthology.org/2024.findings-acl.760/)
 evaluates CASIE with a different reported document split (701 / 149 / 149).
-Its scores are context, not a directly comparable leaderboard for this
-corrected 799 / 100 / 100 split. The role-conditioned experiment is inspired
+Its AC and AC+ metrics also differ: AC+ requires matching the argument's
+attached trigger, whereas AC does not. Our scorer requires the same event ID.
+The scores are context, not a directly comparable leaderboard for this
+corrected 799 / 100 / 100 split and event-specific protocol. The role-conditioned experiment is inspired
 by [TAGPRIME](https://aclanthology.org/2023.acl-long.723/); it is not claimed
 as a reproduction.

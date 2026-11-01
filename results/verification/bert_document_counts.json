@@ -1,0 +1,1402 @@
+[
+  {
+    "document_id": "annotation/10004.json",
+    "events": 9,
+    "cased": {
+      "correct": 14,
+      "predicted": 26,
+      "gold": 30
+    },
+    "uncased": {
+      "correct": 21,
+      "predicted": 36,
+      "gold": 30
+    }
+  },
+  {
+    "document_id": "annotation/10012.json",
+    "events": 3,
+    "cased": {
+      "correct": 4,
+      "predicted": 5,
+      "gold": 10
+    },
+    "uncased": {
+      "correct": 8,
+      "predicted": 11,
+      "gold": 10
+    }
+  },
+  {
+    "document_id": "annotation/10022.json",
+    "events": 1,
+    "cased": {
+      "correct": 2,
+      "predicted": 5,
+      "gold": 4
+    },
+    "uncased": {
+      "correct": 2,
+      "predicted": 3,
+      "gold": 4
+    }
+  },
+  {
+    "document_id": "annotation/10045.json",
+    "events": 2,
+    "cased": {
+      "correct": 7,
+      "predicted": 8,
+      "gold": 8
+    },
+    "uncased": {
+      "correct": 8,
+      "predicted": 9,
+      "gold": 8
+    }
+  },
+  {
+    "document_id": "annotation/10049.json",
+    "events": 6,
+    "cased": {
+      "correct": 9,
+      "predicted": 14,
+      "gold": 12
+    },
+    "uncased": {
+      "correct": 11,
+      "predicted": 17,
+      "gold": 12
+    }
+  },
+  {
+    "document_id": "annotation/10061.json",
+    "events": 9,
+    "cased": {
+      "correct": 21,
+      "predicted": 27,
+      "gold": 31
+    },
+    "uncased": {
+      "correct": 19,
+      "predicted": 35,
+      "gold": 31
+    }
+  },
+  {
+    "document_id": "annotation/10068.json",
+    "events": 12,
+    "cased": {
+      "correct": 17,
+      "predicted": 34,
+      "gold": 29
+    },
+    "uncased": {
+      "correct": 18,
+      "predicted": 37,
+      "gold": 29
+    }
+  },
+  {
+    "document_id": "annotation/10071.json",
+    "events": 5,
+    "cased": {
+      "correct": 9,
+      "predicted": 13,
+      "gold": 18
+    },
+    "uncased": {
+      "correct": 10,
+      "predicted": 13,
+      "gold": 18
+    }
+  },
+  {
+    "document_id": "annotation/10072.json",
+    "events": 11,
+    "cased": {
+      "correct": 22,
+      "predicted": 36,
+      "gold": 36
+    },
+    "uncased": {
+      "correct": 24,
+      "predicted": 36,
+      "gold": 36
+    }
+  },
+  {
+    "document_id": "annotation/10080.json",
+    "events": 2,
+    "cased": {
+      "correct": 2,
+      "predicted": 2,
+      "gold": 2
+    },
+    "uncased": {
+      "correct": 2,
+      "predicted": 2,
+      "gold": 2
+    }
+  },
+  {
+    "document_id": "annotation/10095.json",
+    "events": 15,
+    "cased": {
+      "correct": 15,
+      "predicted": 24,
+      "gold": 31
+    },
+    "uncased": {
+      "correct": 16,
+      "predicted": 34,
+      "gold": 31
+    }
+  },
+  {
+    "document_id": "annotation/10104.json",
+    "events": 9,
+    "cased": {
+      "correct": 15,
+      "predicted": 18,
+      "gold": 27
+    },
+    "uncased": {
+      "correct": 14,
+      "predicted": 21,
+      "gold": 27
+    }
+  },
+  {
+    "document_id": "annotation/10108.json",
+    "events": 9,
+    "cased": {
+      "correct": 16,
+      "predicted": 24,
+      "gold": 23
+    },
+    "uncased": {
+      "correct": 16,
+      "predicted": 23,
+      "gold": 23
+    }
+  },
+  {
+    "document_id": "annotation/10117.json",
+    "events": 5,
+    "cased": {
+      "correct": 12,
+      "predicted": 16,
+      "gold": 14
+    },
+    "uncased": {
+      "correct": 9,
+      "predicted": 11,
+      "gold": 14
+    }
+  },
+  {
+    "document_id": "annotation/10127.json",
+    "events": 2,
+    "cased": {
+      "correct": 3,
+      "predicted": 10,
+      "gold": 6
+    },
+    "uncased": {
+      "correct": 1,
+      "predicted": 2,
+      "gold": 6
+    }
+  },
+  {
+    "document_id": "annotation/10159.json",
+    "events": 13,
+    "cased": {
+      "correct": 22,
+      "predicted": 35,
+      "gold": 32
+    },
+    "uncased": {
+      "correct": 22,
+      "predicted": 39,
+      "gold": 32
+    }
+  },
+  {
+    "document_id": "annotation/10167.json",
+    "events": 10,
+    "cased": {
+      "correct": 30,
+      "predicted": 60,
+      "gold": 52
+    },
+    "uncased": {
+      "correct": 35,
+      "predicted": 56,
+      "gold": 52
+    }
+  },
+  {
+    "document_id": "annotation/10169.json",
+    "events": 8,
+    "cased": {
+      "correct": 9,
+      "predicted": 16,
+      "gold": 16
+    },
+    "uncased": {
+      "correct": 13,
+      "predicted": 17,
+      "gold": 16
+    }
+  },
+  {
+    "document_id": "annotation/10181.json",
+    "events": 11,
+    "cased": {
+      "correct": 11,
+      "predicted": 22,
+      "gold": 23
+    },
+    "uncased": {
+      "correct": 10,
+      "predicted": 22,
+      "gold": 23
+    }
+  },
+  {
+    "document_id": "annotation/10193.json",
+    "events": 15,
+    "cased": {
+      "correct": 29,
+      "predicted": 47,
+      "gold": 42
+    },
+    "uncased": {
+      "correct": 27,
+      "predicted": 47,
+      "gold": 42
+    }
+  },
+  {
+    "document_id": "annotation/10204.json",
+    "events": 12,
+    "cased": {
+      "correct": 24,
+      "predicted": 47,
+      "gold": 40
+    },
+    "uncased": {
+      "correct": 30,
+      "predicted": 40,
+      "gold": 40
+    }
+  },
+  {
+    "document_id": "annotation/10218.json",
+    "events": 10,
+    "cased": {
+      "correct": 19,
+      "predicted": 37,
+      "gold": 29
+    },
+    "uncased": {
+      "correct": 22,
+      "predicted": 40,
+      "gold": 29
+    }
+  },
+  {
+    "document_id": "annotation/10227.json",
+    "events": 8,
+    "cased": {
+      "correct": 12,
+      "predicted": 27,
+      "gold": 28
+    },
+    "uncased": {
+      "correct": 21,
+      "predicted": 43,
+      "gold": 28
+    }
+  },
+  {
+    "document_id": "annotation/10243.json",
+    "events": 7,
+    "cased": {
+      "correct": 8,
+      "predicted": 13,
+      "gold": 10
+    },
+    "uncased": {
+      "correct": 6,
+      "predicted": 14,
+      "gold": 10
+    }
+  },
+  {
+    "document_id": "annotation/10266.json",
+    "events": 21,
+    "cased": {
+      "correct": 29,
+      "predicted": 61,
+      "gold": 57
+    },
+    "uncased": {
+      "correct": 39,
+      "predicted": 69,
+      "gold": 57
+    }
+  },
+  {
+    "document_id": "annotation/10270.json",
+    "events": 17,
+    "cased": {
+      "correct": 23,
+      "predicted": 61,
+      "gold": 44
+    },
+    "uncased": {
+      "correct": 29,
+      "predicted": 71,
+      "gold": 44
+    }
+  },
+  {
+    "document_id": "annotation/10273.json",
+    "events": 4,
+    "cased": {
+      "correct": 10,
+      "predicted": 15,
+      "gold": 11
+    },
+    "uncased": {
+      "correct": 9,
+      "predicted": 15,
+      "gold": 11
+    }
+  },
+  {
+    "document_id": "annotation/10278.json",
+    "events": 25,
+    "cased": {
+      "correct": 41,
+      "predicted": 58,
+      "gold": 61
+    },
+    "uncased": {
+      "correct": 47,
+      "predicted": 61,
+      "gold": 61
+    }
+  },
+  {
+    "document_id": "annotation/10282.json",
+    "events": 10,
+    "cased": {
+      "correct": 13,
+      "predicted": 21,
+      "gold": 22
+    },
+    "uncased": {
+      "correct": 18,
+      "predicted": 31,
+      "gold": 22
+    }
+  },
+  {
+    "document_id": "annotation/10320.json",
+    "events": 5,
+    "cased": {
+      "correct": 2,
+      "predicted": 8,
+      "gold": 10
+    },
+    "uncased": {
+      "correct": 4,
+      "predicted": 9,
+      "gold": 10
+    }
+  },
+  {
+    "document_id": "annotation/10328.json",
+    "events": 5,
+    "cased": {
+      "correct": 10,
+      "predicted": 22,
+      "gold": 19
+    },
+    "uncased": {
+      "correct": 8,
+      "predicted": 14,
+      "gold": 19
+    }
+  },
+  {
+    "document_id": "annotation/10329.json",
+    "events": 10,
+    "cased": {
+      "correct": 12,
+      "predicted": 26,
+      "gold": 55
+    },
+    "uncased": {
+      "correct": 19,
+      "predicted": 40,
+      "gold": 55
+    }
+  },
+  {
+    "document_id": "annotation/10341.json",
+    "events": 10,
+    "cased": {
+      "correct": 14,
+      "predicted": 21,
+      "gold": 28
+    },
+    "uncased": {
+      "correct": 22,
+      "predicted": 30,
+      "gold": 28
+    }
+  },
+  {
+    "document_id": "annotation/1036.json",
+    "events": 8,
+    "cased": {
+      "correct": 10,
+      "predicted": 17,
+      "gold": 18
+    },
+    "uncased": {
+      "correct": 9,
+      "predicted": 18,
+      "gold": 18
+    }
+  },
+  {
+    "document_id": "annotation/10363.json",
+    "events": 5,
+    "cased": {
+      "correct": 3,
+      "predicted": 11,
+      "gold": 9
+    },
+    "uncased": {
+      "correct": 4,
+      "predicted": 12,
+      "gold": 9
+    }
+  },
+  {
+    "document_id": "annotation/10369.json",
+    "events": 15,
+    "cased": {
+      "correct": 25,
+      "predicted": 48,
+      "gold": 54
+    },
+    "uncased": {
+      "correct": 28,
+      "predicted": 60,
+      "gold": 54
+    }
+  },
+  {
+    "document_id": "annotation/1049.json",
+    "events": 2,
+    "cased": {
+      "correct": 5,
+      "predicted": 15,
+      "gold": 10
+    },
+    "uncased": {
+      "correct": 5,
+      "predicted": 10,
+      "gold": 10
+    }
+  },
+  {
+    "document_id": "annotation/105.json",
+    "events": 1,
+    "cased": {
+      "correct": 0,
+      "predicted": 2,
+      "gold": 3
+    },
+    "uncased": {
+      "correct": 1,
+      "predicted": 4,
+      "gold": 3
+    }
+  },
+  {
+    "document_id": "annotation/1191.json",
+    "events": 4,
+    "cased": {
+      "correct": 2,
+      "predicted": 8,
+      "gold": 13
+    },
+    "uncased": {
+      "correct": 4,
+      "predicted": 12,
+      "gold": 13
+    }
+  },
+  {
+    "document_id": "annotation/1202.json",
+    "events": 14,
+    "cased": {
+      "correct": 28,
+      "predicted": 81,
+      "gold": 45
+    },
+    "uncased": {
+      "correct": 28,
+      "predicted": 48,
+      "gold": 45
+    }
+  },
+  {
+    "document_id": "annotation/1219.json",
+    "events": 3,
+    "cased": {
+      "correct": 13,
+      "predicted": 14,
+      "gold": 16
+    },
+    "uncased": {
+      "correct": 12,
+      "predicted": 21,
+      "gold": 16
+    }
+  },
+  {
+    "document_id": "annotation/1221.json",
+    "events": 7,
+    "cased": {
+      "correct": 13,
+      "predicted": 25,
+      "gold": 19
+    },
+    "uncased": {
+      "correct": 11,
+      "predicted": 28,
+      "gold": 19
+    }
+  },
+  {
+    "document_id": "annotation/1271.json",
+    "events": 11,
+    "cased": {
+      "correct": 26,
+      "predicted": 37,
+      "gold": 38
+    },
+    "uncased": {
+      "correct": 22,
+      "predicted": 41,
+      "gold": 38
+    }
+  },
+  {
+    "document_id": "annotation/1320.json",
+    "events": 2,
+    "cased": {
+      "correct": 8,
+      "predicted": 13,
+      "gold": 12
+    },
+    "uncased": {
+      "correct": 6,
+      "predicted": 11,
+      "gold": 12
+    }
+  },
+  {
+    "document_id": "annotation/1327.json",
+    "events": 8,
+    "cased": {
+      "correct": 15,
+      "predicted": 28,
+      "gold": 24
+    },
+    "uncased": {
+      "correct": 11,
+      "predicted": 24,
+      "gold": 24
+    }
+  },
+  {
+    "document_id": "annotation/134.json",
+    "events": 2,
+    "cased": {
+      "correct": 2,
+      "predicted": 3,
+      "gold": 5
+    },
+    "uncased": {
+      "correct": 2,
+      "predicted": 5,
+      "gold": 5
+    }
+  },
+  {
+    "document_id": "annotation/152.json",
+    "events": 9,
+    "cased": {
+      "correct": 14,
+      "predicted": 27,
+      "gold": 25
+    },
+    "uncased": {
+      "correct": 17,
+      "predicted": 31,
+      "gold": 25
+    }
+  },
+  {
+    "document_id": "annotation/1529.json",
+    "events": 3,
+    "cased": {
+      "correct": 1,
+      "predicted": 5,
+      "gold": 7
+    },
+    "uncased": {
+      "correct": 2,
+      "predicted": 6,
+      "gold": 7
+    }
+  },
+  {
+    "document_id": "annotation/1539.json",
+    "events": 4,
+    "cased": {
+      "correct": 5,
+      "predicted": 15,
+      "gold": 13
+    },
+    "uncased": {
+      "correct": 5,
+      "predicted": 23,
+      "gold": 13
+    }
+  },
+  {
+    "document_id": "annotation/1600.json",
+    "events": 8,
+    "cased": {
+      "correct": 22,
+      "predicted": 31,
+      "gold": 28
+    },
+    "uncased": {
+      "correct": 22,
+      "predicted": 33,
+      "gold": 28
+    }
+  },
+  {
+    "document_id": "annotation/1611.json",
+    "events": 7,
+    "cased": {
+      "correct": 12,
+      "predicted": 39,
+      "gold": 19
+    },
+    "uncased": {
+      "correct": 12,
+      "predicted": 32,
+      "gold": 19
+    }
+  },
+  {
+    "document_id": "annotation/1615.json",
+    "events": 13,
+    "cased": {
+      "correct": 22,
+      "predicted": 35,
+      "gold": 33
+    },
+    "uncased": {
+      "correct": 20,
+      "predicted": 39,
+      "gold": 33
+    }
+  },
+  {
+    "document_id": "annotation/1674.json",
+    "events": 7,
+    "cased": {
+      "correct": 5,
+      "predicted": 10,
+      "gold": 13
+    },
+    "uncased": {
+      "correct": 7,
+      "predicted": 13,
+      "gold": 13
+    }
+  },
+  {
+    "document_id": "annotation/1761.json",
+    "events": 7,
+    "cased": {
+      "correct": 8,
+      "predicted": 12,
+      "gold": 32
+    },
+    "uncased": {
+      "correct": 19,
+      "predicted": 35,
+      "gold": 32
+    }
+  },
+  {
+    "document_id": "annotation/1778.json",
+    "events": 4,
+    "cased": {
+      "correct": 2,
+      "predicted": 6,
+      "gold": 12
+    },
+    "uncased": {
+      "correct": 4,
+      "predicted": 8,
+      "gold": 12
+    }
+  },
+  {
+    "document_id": "annotation/186.json",
+    "events": 4,
+    "cased": {
+      "correct": 7,
+      "predicted": 11,
+      "gold": 15
+    },
+    "uncased": {
+      "correct": 9,
+      "predicted": 16,
+      "gold": 15
+    }
+  },
+  {
+    "document_id": "annotation/1863.json",
+    "events": 3,
+    "cased": {
+      "correct": 3,
+      "predicted": 5,
+      "gold": 5
+    },
+    "uncased": {
+      "correct": 3,
+      "predicted": 5,
+      "gold": 5
+    }
+  },
+  {
+    "document_id": "annotation/1924.json",
+    "events": 7,
+    "cased": {
+      "correct": 13,
+      "predicted": 17,
+      "gold": 20
+    },
+    "uncased": {
+      "correct": 12,
+      "predicted": 20,
+      "gold": 20
+    }
+  },
+  {
+    "document_id": "annotation/1982.json",
+    "events": 7,
+    "cased": {
+      "correct": 14,
+      "predicted": 23,
+      "gold": 26
+    },
+    "uncased": {
+      "correct": 15,
+      "predicted": 31,
+      "gold": 26
+    }
+  },
+  {
+    "document_id": "annotation/199.json",
+    "events": 5,
+    "cased": {
+      "correct": 4,
+      "predicted": 12,
+      "gold": 10
+    },
+    "uncased": {
+      "correct": 4,
+      "predicted": 10,
+      "gold": 10
+    }
+  },
+  {
+    "document_id": "annotation/2003.json",
+    "events": 12,
+    "cased": {
+      "correct": 21,
+      "predicted": 43,
+      "gold": 31
+    },
+    "uncased": {
+      "correct": 20,
+      "predicted": 39,
+      "gold": 31
+    }
+  },
+  {
+    "document_id": "annotation/2061.json",
+    "events": 6,
+    "cased": {
+      "correct": 8,
+      "predicted": 15,
+      "gold": 17
+    },
+    "uncased": {
+      "correct": 8,
+      "predicted": 15,
+      "gold": 17
+    }
+  },
+  {
+    "document_id": "annotation/2062.json",
+    "events": 11,
+    "cased": {
+      "correct": 19,
+      "predicted": 24,
+      "gold": 33
+    },
+    "uncased": {
+      "correct": 18,
+      "predicted": 30,
+      "gold": 33
+    }
+  },
+  {
+    "document_id": "annotation/2093.json",
+    "events": 12,
+    "cased": {
+      "correct": 13,
+      "predicted": 25,
+      "gold": 31
+    },
+    "uncased": {
+      "correct": 16,
+      "predicted": 37,
+      "gold": 31
+    }
+  },
+  {
+    "document_id": "annotation/2095.json",
+    "events": 17,
+    "cased": {
+      "correct": 15,
+      "predicted": 20,
+      "gold": 22
+    },
+    "uncased": {
+      "correct": 14,
+      "predicted": 28,
+      "gold": 22
+    }
+  },
+  {
+    "document_id": "annotation/2119.json",
+    "events": 11,
+    "cased": {
+      "correct": 11,
+      "predicted": 21,
+      "gold": 25
+    },
+    "uncased": {
+      "correct": 11,
+      "predicted": 20,
+      "gold": 25
+    }
+  },
+  {
+    "document_id": "annotation/216.json",
+    "events": 13,
+    "cased": {
+      "correct": 27,
+      "predicted": 51,
+      "gold": 36
+    },
+    "uncased": {
+      "correct": 25,
+      "predicted": 44,
+      "gold": 36
+    }
+  },
+  {
+    "document_id": "annotation/2256.json",
+    "events": 10,
+    "cased": {
+      "correct": 14,
+      "predicted": 29,
+      "gold": 29
+    },
+    "uncased": {
+      "correct": 19,
+      "predicted": 30,
+      "gold": 29
+    }
+  },
+  {
+    "document_id": "annotation/2288.json",
+    "events": 13,
+    "cased": {
+      "correct": 22,
+      "predicted": 51,
+      "gold": 46
+    },
+    "uncased": {
+      "correct": 26,
+      "predicted": 56,
+      "gold": 46
+    }
+  },
+  {
+    "document_id": "annotation/2330.json",
+    "events": 7,
+    "cased": {
+      "correct": 9,
+      "predicted": 19,
+      "gold": 23
+    },
+    "uncased": {
+      "correct": 11,
+      "predicted": 20,
+      "gold": 23
+    }
+  },
+  {
+    "document_id": "annotation/252.json",
+    "events": 7,
+    "cased": {
+      "correct": 8,
+      "predicted": 19,
+      "gold": 16
+    },
+    "uncased": {
+      "correct": 10,
+      "predicted": 16,
+      "gold": 16
+    }
+  },
+  {
+    "document_id": "annotation/2625.json",
+    "events": 7,
+    "cased": {
+      "correct": 7,
+      "predicted": 22,
+      "gold": 18
+    },
+    "uncased": {
+      "correct": 8,
+      "predicted": 25,
+      "gold": 18
+    }
+  },
+  {
+    "document_id": "annotation/263.json",
+    "events": 1,
+    "cased": {
+      "correct": 6,
+      "predicted": 6,
+      "gold": 6
+    },
+    "uncased": {
+      "correct": 6,
+      "predicted": 6,
+      "gold": 6
+    }
+  },
+  {
+    "document_id": "annotation/2703.json",
+    "events": 12,
+    "cased": {
+      "correct": 14,
+      "predicted": 32,
+      "gold": 30
+    },
+    "uncased": {
+      "correct": 17,
+      "predicted": 36,
+      "gold": 30
+    }
+  },
+  {
+    "document_id": "annotation/2714.json",
+    "events": 6,
+    "cased": {
+      "correct": 5,
+      "predicted": 16,
+      "gold": 21
+    },
+    "uncased": {
+      "correct": 7,
+      "predicted": 21,
+      "gold": 21
+    }
+  },
+  {
+    "document_id": "annotation/289.json",
+    "events": 3,
+    "cased": {
+      "correct": 6,
+      "predicted": 9,
+      "gold": 9
+    },
+    "uncased": {
+      "correct": 6,
+      "predicted": 10,
+      "gold": 9
+    }
+  },
+  {
+    "document_id": "annotation/340.json",
+    "events": 6,
+    "cased": {
+      "correct": 12,
+      "predicted": 16,
+      "gold": 14
+    },
+    "uncased": {
+      "correct": 12,
+      "predicted": 21,
+      "gold": 14
+    }
+  },
+  {
+    "document_id": "annotation/343.json",
+    "events": 1,
+    "cased": {
+      "correct": 3,
+      "predicted": 5,
+      "gold": 4
+    },
+    "uncased": {
+      "correct": 3,
+      "predicted": 3,
+      "gold": 4
+    }
+  },
+  {
+    "document_id": "annotation/35.json",
+    "events": 3,
+    "cased": {
+      "correct": 5,
+      "predicted": 9,
+      "gold": 8
+    },
+    "uncased": {
+      "correct": 5,
+      "predicted": 10,
+      "gold": 8
+    }
+  },
+  {
+    "document_id": "annotation/387.json",
+    "events": 5,
+    "cased": {
+      "correct": 6,
+      "predicted": 11,
+      "gold": 10
+    },
+    "uncased": {
+      "correct": 10,
+      "predicted": 13,
+      "gold": 10
+    }
+  },
+  {
+    "document_id": "annotation/392.json",
+    "events": 10,
+    "cased": {
+      "correct": 12,
+      "predicted": 24,
+      "gold": 20
+    },
+    "uncased": {
+      "correct": 13,
+      "predicted": 28,
+      "gold": 20
+    }
+  },
+  {
+    "document_id": "annotation/4010.json",
+    "events": 9,
+    "cased": {
+      "correct": 17,
+      "predicted": 26,
+      "gold": 32
+    },
+    "uncased": {
+      "correct": 19,
+      "predicted": 28,
+      "gold": 32
+    }
+  },
+  {
+    "document_id": "annotation/417.json",
+    "events": 6,
+    "cased": {
+      "correct": 9,
+      "predicted": 20,
+      "gold": 15
+    },
+    "uncased": {
+      "correct": 9,
+      "predicted": 18,
+      "gold": 15
+    }
+  },
+  {
+    "document_id": "annotation/436.json",
+    "events": 2,
+    "cased": {
+      "correct": 5,
+      "predicted": 11,
+      "gold": 22
+    },
+    "uncased": {
+      "correct": 9,
+      "predicted": 14,
+      "gold": 22
+    }
+  },
+  {
+    "document_id": "annotation/437.json",
+    "events": 4,
+    "cased": {
+      "correct": 6,
+      "predicted": 13,
+      "gold": 17
+    },
+    "uncased": {
+      "correct": 8,
+      "predicted": 18,
+      "gold": 17
+    }
+  },
+  {
+    "document_id": "annotation/451.json",
+    "events": 6,
+    "cased": {
+      "correct": 11,
+      "predicted": 21,
+      "gold": 19
+    },
+    "uncased": {
+      "correct": 13,
+      "predicted": 19,
+      "gold": 19
+    }
+  },
+  {
+    "document_id": "annotation/527.json",
+    "events": 4,
+    "cased": {
+      "correct": 6,
+      "predicted": 15,
+      "gold": 10
+    },
+    "uncased": {
+      "correct": 8,
+      "predicted": 13,
+      "gold": 10
+    }
+  },
+  {
+    "document_id": "annotation/537.json",
+    "events": 6,
+    "cased": {
+      "correct": 7,
+      "predicted": 19,
+      "gold": 15
+    },
+    "uncased": {
+      "correct": 9,
+      "predicted": 23,
+      "gold": 15
+    }
+  },
+  {
+    "document_id": "annotation/538.json",
+    "events": 6,
+    "cased": {
+      "correct": 10,
+      "predicted": 19,
+      "gold": 21
+    },
+    "uncased": {
+      "correct": 9,
+      "predicted": 12,
+      "gold": 21
+    }
+  },
+  {
+    "document_id": "annotation/552.json",
+    "events": 3,
+    "cased": {
+      "correct": 5,
+      "predicted": 9,
+      "gold": 6
+    },
+    "uncased": {
+      "correct": 4,
+      "predicted": 8,
+      "gold": 6
+    }
+  },
+  {
+    "document_id": "annotation/56.json",
+    "events": 5,
+    "cased": {
+      "correct": 5,
+      "predicted": 16,
+      "gold": 14
+    },
+    "uncased": {
+      "correct": 6,
+      "predicted": 18,
+      "gold": 14
+    }
+  },
+  {
+    "document_id": "annotation/562.json",
+    "events": 2,
+    "cased": {
+      "correct": 1,
+      "predicted": 7,
+      "gold": 4
+    },
+    "uncased": {
+      "correct": 1,
+      "predicted": 7,
+      "gold": 4
+    }
+  },
+  {
+    "document_id": "annotation/575.json",
+    "events": 6,
+    "cased": {
+      "correct": 7,
+      "predicted": 19,
+      "gold": 11
+    },
+    "uncased": {
+      "correct": 7,
+      "predicted": 23,
+      "gold": 11
+    }
+  },
+  {
+    "document_id": "annotation/69.json",
+    "events": 3,
+    "cased": {
+      "correct": 4,
+      "predicted": 11,
+      "gold": 12
+    },
+    "uncased": {
+      "correct": 6,
+      "predicted": 10,
+      "gold": 12
+    }
+  },
+  {
+    "document_id": "annotation/72.json",
+    "events": 7,
+    "cased": {
+      "correct": 5,
+      "predicted": 18,
+      "gold": 14
+    },
+    "uncased": {
+      "correct": 4,
+      "predicted": 20,
+      "gold": 14
+    }
+  },
+  {
+    "document_id": "annotation/745.json",
+    "events": 1,
+    "cased": {
+      "correct": 2,
+      "predicted": 2,
+      "gold": 5
+    },
+    "uncased": {
+      "correct": 2,
+      "predicted": 2,
+      "gold": 5
+    }
+  },
+  {
+    "document_id": "annotation/843.json",
+    "events": 8,
+    "cased": {
+      "correct": 9,
+      "predicted": 22,
+      "gold": 20
+    },
+    "uncased": {
+      "correct": 13,
+      "predicted": 23,
+      "gold": 20
+    }
+  },
+  {
+    "document_id": "annotation/86.json",
+    "events": 4,
+    "cased": {
+      "correct": 6,
+      "predicted": 12,
+      "gold": 12
+    },
+    "uncased": {
+      "correct": 7,
+      "predicted": 18,
+      "gold": 12
+    }
+  },
+  {
+    "document_id": "annotation/983.json",
+    "events": 8,
+    "cased": {
+      "correct": 12,
+      "predicted": 19,
+      "gold": 22
+    },
+    "uncased": {
+      "correct": 16,
+      "predicted": 25,
+      "gold": 22
+    }
+  },
+  {
+    "document_id": "annotation/999.json",
+    "events": 2,
+    "cased": {
+      "correct": 5,
+      "predicted": 6,
+      "gold": 5
+    },
+    "uncased": {
+      "correct": 3,
+      "predicted": 6,
+      "gold": 5
+    }
+  }
+]

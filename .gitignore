@@ -9,5 +9,17 @@ runs/
 *.pt
 *.joblib
 *.bin
+*.pth
+*.ckpt
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.cache/
+.pytest_cache/
+.ruff_cache/
+uploads/
+*.log
 *.zip
 !data/TeamUltron_Project2_Inputs.zip

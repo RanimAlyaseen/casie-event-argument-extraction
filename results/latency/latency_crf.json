@@ -1,0 +1,8 @@
+{
+  "device": "cpu",
+  "params_millions": 0.15,
+  "single_event_ms_median": 12.3,
+  "single_event_ms_p90": 16.4,
+  "throughput_events_per_s": 106.0,
+  "events": 736
+}

@@ -1,0 +1,10 @@
+{
+  "source_archive": "TeamUltron_Project2 (1).zip",
+  "source_archive_sha256": "42cf8ab1a031435ab62527b32738d51d1384b83a3903914741fddd3d19909a5f",
+  "members": {
+    "TeamUltron_Project2/results/latency_gpu.json": "ba9eae7f0eee795945da81518806a255bea54a978a55e1a304f2a527e5a6dfbc",
+    "TeamUltron_Project2/results/latency_crf.json": "47a992785c891760a3cfccff41434ad1a73081f96966699e844d3210f0b403f4"
+  },
+  "hardware_provenance": "GPU JSON records cuda:0; accompanying archived README reports Tesla T4. CRF JSON records CPU.",
+  "measurement_scope": "Original five supplied models; not rerun on the local laptop"
+}

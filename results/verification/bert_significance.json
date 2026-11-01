@@ -1,0 +1,274 @@
+{
+  "created_utc": "2026-11-01T12:29:12.358471+00:00",
+  "comparison": "Supplied BERT uncased minus supplied BERT cased; test split",
+  "scope": "Retrospective audit of fixed supplied predictions; no inference or training",
+  "sample": {
+    "events": 736,
+    "documents": 100,
+    "gold_arguments": 2109
+  },
+  "scorer": "Repository casie_eval.evaluate; exact event UID, inclusive token span and role",
+  "provenance": {
+    "repository_commit": "e563f31d273e7f03c6b566d211c6f67d340f095e",
+    "scorer_sha256": "9bf9e79ca3fee0e48373c4ad1844dacd09ad37755942bd66d33de286a870961f",
+    "bundle_sha256": "733d35285fb640930da334baad7cd7a1c85ff7d166d47e41ae684498c8994daf",
+    "member_sha256": {
+      "predictions/test_bert-base-cased.jsonl": "b53d9eb798cadfee1b92d6452ca7981761e9cf4e70ab97252236c5890b1ba96e",
+      "predictions/test_bert-base-uncased.jsonl": "26d2e567219112f19911372afdcf850dbce70cfcadc75bc042acfe518fb47c0e",
+      "dataset/CASIE_test.jsonl": "ed9c585a54660d14decdd49efd25dfb33e07c44f150614fb136c2cbfbdbc1c50"
+    },
+    "audit_script_sha256": "0726c741ca9c676e5e61a608eb6124d3365f5877d16b1ca108cd7b621d897eb8",
+    "python": "3.13.0",
+    "random_generator": "Python random.Random (MT19937)"
+  },
+  "models": {
+    "bert_cased": {
+      "overall": {
+        "arg_c_precision": 0.5289217954650625,
+        "arg_c_recall": 0.5419630156472262,
+        "arg_c_f1": 0.5353629976580796,
+        "arg_i_precision": 0.5543729754743174,
+        "arg_i_recall": 0.5680417259364627,
+        "arg_i_f1": 0.5611241217798595,
+        "macro_f1": 0.4485199454242965,
+        "gold_arguments": 2109,
+        "predicted_arguments": 2161,
+        "correct": 1143,
+        "events": 736
+      },
+      "warnings": [],
+      "repository_f1_ci_1000_seed42": [
+        0.510012782275245,
+        0.5609022556390978
+      ]
+    },
+    "bert_uncased": {
+      "overall": {
+        "arg_c_precision": 0.5396690708527789,
+        "arg_c_recall": 0.6031294452347084,
+        "arg_c_f1": 0.5696372592924316,
+        "arg_i_precision": 0.566822231650403,
+        "arg_i_recall": 0.6334755808440019,
+        "arg_i_f1": 0.5982982534706671,
+        "macro_f1": 0.5197304702341722,
+        "gold_arguments": 2109,
+        "predicted_arguments": 2357,
+        "correct": 1272,
+        "events": 736
+      },
+      "warnings": [],
+      "repository_f1_ci_1000_seed42": [
+        0.5459839844697888,
+        0.5923612779245736
+      ]
+    }
+  },
+  "observed_difference_uncased_minus_cased": {
+    "precision": 0.01074727538771647,
+    "recall": 0.061166429587482196,
+    "f1": 0.0342742616343521
+  },
+  "paired_document_bootstrap": {
+    "replicates": 100000,
+    "seed": 42,
+    "resampling": "Sample 100 document IDs with replacement; identical sampled IDs for both models",
+    "statistic": "Difference of pooled corpus micro metrics, not average document metrics",
+    "percentile_method": "Linear interpolation at (n-1)*q for q=.025,.975",
+    "difference": {
+      "precision": {
+        "percentile_ci_95": [
+          -0.01638555808476696,
+          0.03820321031817232
+        ],
+        "repository_order_statistic_ci_95": [
+          -0.016385461946906155,
+          0.03820310018252204
+        ],
+        "negative_replicates": 22590,
+        "zero_replicates": 4,
+        "positive_replicates": 77406,
+        "uncased_better_fraction": 0.77406,
+        "twice_smaller_bootstrap_tail_fraction": 0.45188
+      },
+      "recall": {
+        "percentile_ci_95": [
+          0.03699526950403137,
+          0.08568650981387668
+        ],
+        "repository_order_statistic_ci_95": [
+          0.036995515695067316,
+          0.08568646543330083
+        ],
+        "negative_replicates": 0,
+        "zero_replicates": 0,
+        "positive_replicates": 100000,
+        "uncased_better_fraction": 1.0,
+        "twice_smaller_bootstrap_tail_fraction": 0.0
+      },
+      "f1": {
+        "percentile_ci_95": [
+          0.012494375780484264,
+          0.05562814048819114
+        ],
+        "repository_order_statistic_ci_95": [
+          0.01249447100343748,
+          0.05562807649956758
+        ],
+        "negative_replicates": 103,
+        "zero_replicates": 0,
+        "positive_replicates": 99897,
+        "uncased_better_fraction": 0.99897,
+        "twice_smaller_bootstrap_tail_fraction": 0.00206
+      }
+    }
+  },
+  "historical_5000_bootstrap_diagnostic": {
+    "replicates": 5000,
+    "seed": 42,
+    "document_order": "Sorted document_id; matches repository compare_models",
+    "difference": {
+      "precision": {
+        "percentile_ci_95": [
+          -0.016483104042468194,
+          0.03918500049360054
+        ],
+        "repository_order_statistic_ci_95": [
+          -0.016482730719655225,
+          0.039183689578240366
+        ],
+        "negative_replicates": 1128,
+        "zero_replicates": 0,
+        "positive_replicates": 3872,
+        "uncased_better_fraction": 0.7744,
+        "twice_smaller_bootstrap_tail_fraction": 0.4512
+      },
+      "recall": {
+        "percentile_ci_95": [
+          0.03714068686594054,
+          0.085969315733069
+        ],
+        "repository_order_statistic_ci_95": [
+          0.037141513869299536,
+          0.08596837944664026
+        ],
+        "negative_replicates": 0,
+        "zero_replicates": 0,
+        "positive_replicates": 5000,
+        "uncased_better_fraction": 1.0,
+        "twice_smaller_bootstrap_tail_fraction": 0.0
+      },
+      "f1": {
+        "percentile_ci_95": [
+          0.012582567033495532,
+          0.05623686407148875
+        ],
+        "repository_order_statistic_ci_95": [
+          0.012584486729625866,
+          0.05623682537558128
+        ],
+        "negative_replicates": 5,
+        "zero_replicates": 0,
+        "positive_replicates": 4995,
+        "uncased_better_fraction": 0.999,
+        "twice_smaller_bootstrap_tail_fraction": 0.002
+      }
+    },
+    "repository_compare_models": {
+      "f1_a": 0.5353629976580796,
+      "f1_b": 0.5696372592924316,
+      "difference": 0.03427426163435199,
+      "b_better_fraction": 0.999
+    },
+    "note": "Bootstrap tail fractions are diagnostics, not the primary randomization p-value"
+  },
+  "paired_document_randomization": {
+    "replicates": 100000,
+    "seed": 42,
+    "null": "Model labels are exchangeable within each complete test document.",
+    "statistic": "Absolute difference in pooled exact event-specific Arg-C micro F1",
+    "sidedness": "two-sided",
+    "sampling": "Independent uniform whole-document swap masks, with replacement",
+    "extreme_replicates": 359,
+    "extremeness_rule": "abs(delta_permuted) >= abs(delta_observed); exact rational comparison",
+    "p_value": 0.0035999640003599965,
+    "p_formula": "(extreme_replicates + 1) / (replicates + 1)",
+    "monte_carlo_standard_error_approx": 0.00018913254347150308,
+    "multiple_comparisons": "Unadjusted; one focused retrospective BERT F1 comparison",
+    "alpha": 0.05
+  },
+  "source_archive": {
+    "filename": "TeamUltron_Project2 (1).zip",
+    "archive_sha256": "42cf8ab1a031435ab62527b32738d51d1384b83a3903914741fddd3d19909a5f",
+    "prediction_sha256": {
+      "predictions/test_bert-base-cased.jsonl": "b53d9eb798cadfee1b92d6452ca7981761e9cf4e70ab97252236c5890b1ba96e",
+      "predictions/test_bert-base-uncased.jsonl": "26d2e567219112f19911372afdcf850dbce70cfcadc75bc042acfe518fb47c0e"
+    },
+    "training_config": {
+      "bert-base-cased": {
+        "model_name": "bert-base-cased",
+        "max_len": 512,
+        "epochs": 10,
+        "batch_size": 8,
+        "grad_accum": 2,
+        "lr": 3e-05,
+        "weight_decay": 0.01,
+        "warmup_ratio": 0.1,
+        "seed": 42,
+        "fp16": true,
+        "window": "trigger-centred, grown outwards until max_len",
+        "trigger_marking": "text pair (subtype + trigger) and <t> </t> markers",
+        "window_coverage_train": 1.0,
+        "window_coverage_val": 1.0,
+        "best_val_arg_c_f1": 0.5260791366906475,
+        "best_epoch": 5
+      },
+      "bert-base-uncased": {
+        "model_name": "bert-base-uncased",
+        "max_len": 512,
+        "epochs": 10,
+        "batch_size": 8,
+        "grad_accum": 2,
+        "lr": 3e-05,
+        "weight_decay": 0.01,
+        "warmup_ratio": 0.1,
+        "seed": 42,
+        "fp16": true,
+        "window": "trigger-centred, grown outwards until max_len",
+        "trigger_marking": "text pair (subtype + trigger) and <t> </t> markers",
+        "window_coverage_train": 1.0,
+        "window_coverage_val": 1.0,
+        "best_val_arg_c_f1": 0.555696738670055,
+        "best_epoch": 8
+      }
+    },
+    "readme_claim": {
+      "f1_difference": 0.034,
+      "ci_95": [
+        0.013,
+        0.056
+      ],
+      "p": 0.002,
+      "bootstrap_replicates": 5000
+    },
+    "original_p_value_formula_and_generating_script": "Not identified in inspected package"
+  },
+  "validation": {
+    "exhaustive_toy_assignments": 8,
+    "exhaustive_toy_extremes": 4,
+    "identical_model_p_is_one": true,
+    "identical_model_bootstrap_is_zero": true,
+    "quantile_interpolation_checked": true
+  },
+  "limitations": [
+    "Conditional on these fitted models and this corrected test split; no training-seed uncertainty",
+    "Whole-document resampling preserves within-document event dependence; assumes independent document clusters",
+    "Cased and uncased use different pretrained models and vocabularies; not a controlled casing-only intervention",
+    "Comparison is retrospective and unadjusted; not a preregistered or benchmark-wide multiple-comparison analysis",
+    "Different statistical tests and random seeds need not reproduce the identical rounded historical p-value"
+  ],
+  "method_references": [
+    "https://aclanthology.org/P18-1128/",
+    "https://aclanthology.org/W05-0908/"
+  ],
+  "elapsed_seconds": 14.093233300001884
+}

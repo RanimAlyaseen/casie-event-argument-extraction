@@ -1,0 +1,39 @@
+[
+  {
+    "event_uid": "annotation/2095.json::0::5::E6",
+    "restored_correct": 2,
+    "supplied_correct": 2,
+    "restored_only": [
+      [
+        134,
+        134,
+        "Purpose"
+      ]
+    ],
+    "supplied_only": []
+  },
+  {
+    "event_uid": "annotation/2288.json::1::2::E5",
+    "restored_correct": 2,
+    "supplied_correct": 3,
+    "restored_only": [
+      [
+        161,
+        164,
+        "Attacker"
+      ],
+      [
+        165,
+        165,
+        "Trusted-Entity"
+      ]
+    ],
+    "supplied_only": [
+      [
+        161,
+        165,
+        "Attacker"
+      ]
+    ]
+  }
+]
