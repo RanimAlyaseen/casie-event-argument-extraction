@@ -24,11 +24,11 @@ model training, evaluation, and final integration involved team support.
 - Analyzed prediction errors and role-level performance.
 - Compared traditional, neural, and transformer-based approaches.
 - Prepared the final presentation slides.
+- Evaluated model predictions using exact span-and-role metrics.
 
 ### Azza Almousli — documentation and evaluation
 
 - Managed the main project documentation, including the README.
-- Evaluated model predictions using exact span-and-role metrics.
 
 ## Artifact provenance
 
